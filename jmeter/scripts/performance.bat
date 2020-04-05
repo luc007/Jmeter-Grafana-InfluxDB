@@ -33,7 +33,7 @@ goto :init
     if /i "%~1"=="-?"         call :usage "%~2" & goto :end
     if /i "%~1"=="--help"     call :usage "%~2" & goto :end
 
-    if /i "%~1"=="-f" OR "%~1"=="-d"(
+    if /i ("%~1"=="-f" or "%~1"=="-d")(
 		set "option=%~1"
 		set "argument=%~2"
 	)
@@ -46,20 +46,21 @@ goto :init
 :main
 	set "JMETER_HOME=C:\Tools\apache-jmeter-5.2.1"
 	set "PATH=%JMETER_HOME%\bin;%PATH%"
-    set "JMETER_SCRIPTS=C:\dsra\dsra_performance\drsa_performance\jmeter\scripts"
+    set "JMETER_SCRIPTS=C:\dsra\dsra_performance\grafana_influxdb\jmeter\scripts"
 
     cd %JMETER_SCRIPTS%
     
     if "%option%"=="-f" (
 		echo ===== Running "%argument%" ======
-		jmeter.bat -Jjmeter.save.saveservice.output_format=xml -n -t "%argument%" -f -l ../reports/result.jtl	
+		jmeter.bat -Jjmeter.save.saveservice.output_format=xml -n -t %argument% -f -l ..\reports\result.jtl	
 	) 
 
 	if "%option%"=="-d" (
-		set JMX_DIR=%argument%
-		for /F %%x in ('dir /B/D '%JMX_DIR%') do (
+		set "JMX_DIR=%argument%"
+		for /F %%x in ('dir /B/D %JMX_DIR%') do (
+			echo "%JMX_DIR%\%%x"
 		  set JMX_FILE=%JMX_DIR%\%%x
-		  echo ======= Running !JMX_FILE! =========
+		  echo ======= Running %%~n!JMX_FILE! =========
 			jmeter.bat -Jjmeter.save.saveservice.output_format=xml -n -t !JMX_FILE! -f -l ../reports/result.jtl
 		)
 	)

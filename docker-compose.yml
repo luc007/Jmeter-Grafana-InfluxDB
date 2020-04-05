@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  influxdb:
+    image: influxdb:latest
+    container_name: influxdb
+    environment:
+        - INFLUXDB_DB=DSRA_DB
+    ports:
+      - '8086:8086'
+    volumes:
+      - influxdb_home:/var/lib/influxdb
+    restart: always
+    
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    links:
+      - influxdb:influxdb
+    ports:
+      - '3000:3000'
+    volumes:
+      - grafana_home:/var/lib/grafana
+      - ./grafana/provisioning/:/etc/grafana/provisioning
+      - ./grafana/grafana.ini:/etc/grafana/grafana.ini
+    depends_on:
+      - influxdb 
+    restart: always
+    
+volumes:
+  grafana_home: 
+  influxdb_home:

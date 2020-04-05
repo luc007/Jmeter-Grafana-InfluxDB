@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="0" it="0" lt="0" ct="0" ts="1586042199047" s="true" lb="S01_01_POST_Facility" rc="" rm="" tn="S01_01_POST_Facility 1-1" dt="" by="0" sby="0" ng="1" na="8">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="1586042199047" s="true" lb="S01_03_GET_Facility_guid" rc="" rm="" tn="S01_03_GET_Facility_guid 4-1" dt="" by="0" sby="0" ng="1" na="8">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="1586042199047" s="true" lb="S01_02_GET_Facility" rc="" rm="" tn="S01_02_GET_Facility 3-1" dt="" by="0" sby="0" ng="1" na="8">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<httpSample t="562" it="0" lt="559" ct="173" ts="1586042202236" s="true" lb="S02_03_GET_Route_guid" rc="200" rm="OK" tn="S02_03_GET_Route_guid 7-1" dt="text" by="502" sby="295" ng="2" na="10">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/route/perf_r_147</java.net.URL>
+</httpSample>
+<httpSample t="579" it="0" lt="579" ct="128" ts="1586042202280" s="true" lb="S02_02_GET_Route" rc="200" rm="OK" tn="S02_02_GET_Route 6-1" dt="text" by="824" sby="330" ng="2" na="10">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/route?facility=6f179325-7f68-418c-891f-18730bc28974</java.net.URL>
+</httpSample>
+<httpSample t="489" it="0" lt="489" ct="76" ts="1586042202431" s="true" lb="S03_03_GET_WC_number" rc="200" rm="OK" tn="S03_03_GET_WC_number 10-1" dt="text" by="825" sby="297" ng="2" na="10">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/work-centre/549991</java.net.URL>
+</httpSample>
+<httpSample t="450" it="0" lt="449" ct="67" ts="1586042202587" s="true" lb="S02_01_POST_Route" rc="200" rm="OK" tn="S02_01_POST_Route 5-1" dt="text" by="386" sby="528" ng="2" na="10">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/route</java.net.URL>
+</httpSample>
+<httpSample t="446" it="0" lt="446" ct="66" ts="1586042202994" s="true" lb="S03_01_POST_WC" rc="200" rm="OK" tn="S03_01_POST_WC 9-1" dt="text" by="386" sby="584" ng="2" na="10">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/work-centre</java.net.URL>
+</httpSample>
+<httpSample t="439" it="0" lt="439" ct="68" ts="1586042203148" s="true" lb="S03_03_GET_WC_number" rc="200" rm="OK" tn="S03_03_GET_WC_number 10-2" dt="text" by="867" sby="297" ng="2" na="10">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/work-centre/123285</java.net.URL>
+</httpSample>
+<httpSample t="583" it="0" lt="583" ct="70" ts="1586042203136" s="true" lb="S02_02_GET_Route" rc="200" rm="OK" tn="S02_02_GET_Route 6-2" dt="text" by="1041" sby="330" ng="2" na="10">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/route?facility=9d3a07de-9b87-4889-ba8a-64943231a81f</java.net.URL>
+</httpSample>
+<httpSample t="403" it="0" lt="403" ct="73" ts="1586042203545" s="true" lb="S03_01_POST_WC" rc="200" rm="OK" tn="S03_01_POST_WC 9-2" dt="text" by="386" sby="584" ng="2" na="10">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/work-centre</java.net.URL>
+</httpSample>
+<httpSample t="486" it="0" lt="486" ct="83" ts="1586042203485" s="true" lb="S02_01_POST_Route" rc="200" rm="OK" tn="S02_01_POST_Route 5-2" dt="text" by="386" sby="528" ng="2" na="10">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/route</java.net.URL>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="1586042204024" s="true" lb="S01_04_DELETE_Facility_guid" rc="" rm="" tn="S01_04_DELETE_Facility_guid 2-1" dt="" by="0" sby="0" ng="1" na="11">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<httpSample t="540" it="0" lt="540" ct="83" ts="1586042203707" s="true" lb="S02_03_GET_Route_guid" rc="200" rm="OK" tn="S02_03_GET_Route_guid 7-2" dt="text" by="498" sby="293" ng="2" na="12">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/route/perf_r_1</java.net.URL>
+</httpSample>
+<httpSample t="413" it="0" lt="413" ct="73" ts="1586042207173" s="true" lb="S02_04_DELETE_Route" rc="200" rm="OK" tn="S02_04_DELETE_Route 8-1" dt="text" by="361" sby="316" ng="1" na="12">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/route/perf_rr_1</java.net.URL>
+</httpSample>
+<httpSample t="446" it="0" lt="446" ct="99" ts="1586042207730" s="true" lb="S03_04_DELETE_WC_guid" rc="200" rm="OK" tn="S03_04_DELETE_WC_guid 11-1" dt="text" by="361" sby="321" ng="1" na="12">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <java.net.URL>https://coo-acd-routemanagement-mdx-ui-perf11.azcpggpc.ca/rest/routing/v1/work-centre/perf_w_1</java.net.URL>
+</httpSample>
+
+</testResults>

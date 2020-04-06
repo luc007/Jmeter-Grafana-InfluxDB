@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="0" it="0" lt="0" ct="0" ts="1586177653001" s="true" lb="S01_01_POST_Facility" rc="" rm="" tn="S01_01_POST_Facility 1-1" dt="" by="0" sby="0" ng="1" na="2">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="1586177653001" s="true" lb="S01_02_GET_Facility" rc="" rm="" tn="S01_02_GET_Facility 3-1" dt="" by="0" sby="0" ng="1" na="2">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+<sample t="0" it="0" lt="0" ct="0" ts="1586177657979" s="true" lb="S01_04_DELETE_Facility_guid" rc="" rm="" tn="S01_04_DELETE_Facility_guid 2-1" dt="" by="0" sby="0" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</sample>
+
+</testResults>

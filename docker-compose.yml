@@ -5,7 +5,7 @@ services:
     image: influxdb:latest
     container_name: influxdb
     environment:
-        - INFLUXDB_DB=DSRA_DB
+        - INFLUXDB_DB=My_DB
     ports:
       - '8086:8086'
     volumes:

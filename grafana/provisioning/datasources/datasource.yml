@@ -3,10 +3,10 @@ apiVersion: 1
 
 # list of datasources
 datasources:
-- name: DSRA
+- name: MungDB
   type: influxdb
   access: proxy
   url: http://influxdb:8086
-  database: DSRA_DB
+  database: My_DB
   isDefault: true
   editable: true

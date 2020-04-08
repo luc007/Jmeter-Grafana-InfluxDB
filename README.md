@@ -47,7 +47,7 @@ The app creates a default InfluxDB database called `DSRA_DB`.
 
 ## Data Sources
 
-The app creates a Grafana data source called `InfluxDB` that's connected to the default IndfluxDB database (e.g. `DSRA_DB`).
+The app creates a Grafana data source called `InfluxDB` that's connected to the default IndfluxDB database (e.g. `My_DB`).
 
 To provision additional data sources, see the Grafana [documentation](http://docs.grafana.org/administration/provisioning/#datasources) and add a config file to `./provisioning/datasources/` before starting the app.
 
